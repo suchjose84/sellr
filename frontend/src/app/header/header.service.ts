@@ -10,7 +10,8 @@ export class HeaderService {
     // private username = 'suchjose84';
 
     getUser(username: string){
-        return this.http.get(`http://localhost:4000/users/${username}`);
+        return this.http.get(`https://sellr-backend.onrender.com/users/${username}`);
+        // return this.http.get(`http://localhost/4000/users/${username}`);
     }
 
 }
