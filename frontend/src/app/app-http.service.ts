@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
 export class AppHttpService {
     constructor( private http: HttpClient){}
 
-    url = "https://sellr-backend.onrender.com/users";
+    url = "https://sellr-backend.onrender.com/users/";
 
     getUser(username: string){
         return this.http.get(`${this.url}${username}`);
