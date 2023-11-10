@@ -10,7 +10,8 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin: 'http://localhost:4200'
+    origin: 'http://localhost:4200',
+    origin: 'https://master.d2h1yeujaswaeo.amplifyapp.com/'
 }));
 
 //connects to auth0
