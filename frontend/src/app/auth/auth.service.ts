@@ -23,7 +23,7 @@ export class AuthService {
   ];
   days = Array.from({ length: 31 }, (_, i) => i + 1);
   years: number[] = Array.from({ length: new Date().getFullYear() - 1899 }, (_, i) => i + 1900).reverse();
-  url = 'https://sellr-backend.onrender.com/users';
+  url = 'https://sellr-backend.onrender.com';
 
   signup(
     firstName: string, 
