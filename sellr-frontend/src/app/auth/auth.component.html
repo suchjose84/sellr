@@ -1,0 +1,76 @@
+<div>
+  <h1>Sell Your Camel</h1>
+  <p>Start selling your stuff now.</p>
+</div>
+
+<div id="loginFormBox">
+  <form id="loginForm">
+    <div class="divStack">
+      <div class="form-items-div">
+        <label for="loginEmail"></label>
+        <input type="email" id="loginEmail" name="email" class="auth-form-items login-form-input" placeholder="Email">
+      </div>
+      <div class="form-items-div">
+        <label for="loginPassword"></label>
+        <input type="password" id="loginPassword" name="password" class="auth-form-items login-form-input" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-items-div">
+      <button class="button-login">Login</button>
+    </div>
+    <div class="form-items-div blue">
+      <a href="#" class="anchorTag auth-form-items">Forgot password?</a>
+    </div>
+    <div class="form-items-div">
+      <hr>
+    </div>
+    <div>
+      <button class="button-goto-signup">Create New Account</button>
+    </div>
+  </form>
+</div>
+
+<div id="signupFormBox">
+  <div id="signupTitleDiv">
+    <h2>Sign Up</h2>
+    <p>It's quick and easy.</p>
+  </div>
+  <hr>
+  <div id="errorMessage">Error Message here</div>
+  <form id="signupForm" (ngSubmit)="onClickSignup(f)" #f="ngForm">
+    <div id="signupNameDiv" class="form-items-div">
+      <label for="firstName">
+        <input type="text" id="firstName" name="firstName" class="auth-form-items signup-form-input" placeholder="First Name" ngModel required>
+      </label>
+      <label for="lastName">
+        <input type="text" id="lastName" name="lastName" class="auth-form-items signup-form-input" placeholder="Last Name" ngModel required>
+      </label>
+    </div>
+    <label for="username">
+      <input type="text" id="username" name="username" class="auth-form-items signup-form-input" placeholder="Username" ngModel required>
+    </label>
+    <label for="email">
+      <input type="email" id="email" name="email" class="auth-form-items signup-form-input" placeholder="Email" ngModel required>
+    </label>
+    <label for="password">
+      <input type="password" id="password" name="password" class="auth-form-items signup-form-input" placeholder="Password" ngModel required>
+    </label>
+    <div class="form-items-div">
+      <label for="bdayMonth">Birthday</label>
+      <select id="bdayMonth" name="bDayMonth" [(ngModel)]="selectedMonth" class="auth-form-items" required>
+        <option *ngFor="let month of months" [value]="month.value">{{ month.name }}</option>
+      </select>      
+      <select id="bDay" name="bDay" [(ngModel)]="selectedDay" class="auth-form-items" required>
+        <option *ngFor="let day of days" [value]="day">{{ day }}</option>
+      </select>
+      <select id="bDayYear" name="bDayYear" [(ngModel)]="selectedYear" class="auth-form-items" required>
+        <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+      </select>
+    </div>
+    <div class="form-items-div">
+      <button type="submit" class="auth-form-items button-signup">Sign Up</button>
+    </div>
+  </form>
+</div>
+
+

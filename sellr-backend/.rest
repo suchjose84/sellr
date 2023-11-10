@@ -1,0 +1,22 @@
+// LOCALHOST
+### Get all user data
+GET http://localhost:4000/users HTTP/1.1
+
+### Get user by username
+GET http://localhost:4000/users/suchjose84 HTTP/1.1
+
+### Get user by username
+POST  http://localhost:4000/addUser HTTP/1.1
+content-type: application/json
+
+{
+      "username": "suchjose84",
+      "firstName": "any",
+      "lastName": "any",
+      "email": "suchjose@live.com",
+      "password": "Password12345!",
+      "birthDate": "any",
+      "phone": "any",
+      "country": "any",
+      "profileImg": "any"
+}

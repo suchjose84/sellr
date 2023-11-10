@@ -1,0 +1,58 @@
+
+<app-header></app-header>
+<main>
+  <nav id="leftSideNav">
+    <ul>
+
+      <li>
+        <a href="http://localhost:4200" title="home">
+          <img class="profilePic" src="../../assets/images/jojo-profile-pic.jpg" alt="profile-image">
+          <span class="leftNavSpan">Joe's Agri Supply</span>
+        </a>
+
+      </li>
+
+      <li>
+        <a href="http://localhost:4200/marketplace">
+          <img class="profilePic" src="../../assets/images/marketplace2-icon.png" alt="marketplace-image">
+          <span class="leftNavSpan">Marketplace</span>
+        </a>
+
+      </li>
+      <li>
+        <a href="http://localhost:4200/deliveries">
+          <img class="profilePic" src="../../assets/images/delivery-icon.png" alt="deliveries-image">
+          <span class="leftNavSpan">Deliveries</span>
+        </a>
+
+      </li>
+    </ul>
+  </nav>
+  <div id="midPostingArea">
+    <div id="postingContainer">
+        <form>
+            <label for="postInput" class="horizontal">
+              <img class="profilePic" src="../../assets/images/jojo-profile-pic.jpg" alt="">
+              <input type="text" placeholder="Whatcha wanna sell?" name="postInput" id="postInput" (click)="showDiv = true" (blur)="showDiv = false">
+            </label>
+        </form>
+          
+        <div id=postPopUpDiv *ngIf="showDiv">
+        <p>form pops up</p>
+        </div>          
+      <hr>
+      <div>Photo/Video</div>
+
+    </div>
+    <div id="postCards">
+        <div>
+            Posts goes here.
+
+        </div>
+
+
+    </div>
+
+  </div>
+  <div id="rightSideBar"></div>
+</main>

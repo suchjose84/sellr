@@ -1,0 +1,138 @@
+#loginFormBox {
+    padding: 20px 0 20px 0;
+    /* width: 20%; */
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+
+}
+
+#loginForm, #signupForm {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 100%;
+}
+.login-form-input, .signup-form-input {
+    border-radius: 8px;
+    padding: 14px 16px;
+    width: 100%;
+    border: 1px solid #dddfe2;
+    color: #808080;
+
+}
+
+.auth-form-items:focus{
+    outline: 1px solid rgb(65,105,225);
+
+}
+
+.form-items-div {
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+#signupTitleDiv {
+    padding: 0 5%;
+    border: 1px solid red;
+}
+
+#loginForm button {
+    padding: 14px 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+#loginForm button:focus {
+    outline: 2px solid rgba(65,105,225, .5);
+}
+
+.button-login {
+    background-color: #1877f2;
+    color: #fff;
+    font-size: 17px;
+}
+.button-goto-signup {
+    background-color: #42b72a;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+}
+.anchorTag {
+    text-decoration: none;
+}
+.anchorTag:hover {
+    text-decoration: underline;
+}
+#loginForm a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* SignUP Form */
+
+#signupFormBox {
+    display: none;
+    width: 20%;
+    padding: 20px 0 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    margin: 0 auto;
+}
+
+#signupForm {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signupTitle {
+    width: 100%;
+}
+
+#signupForm button {
+    padding: 14px 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+}
+#signupForm button:focus {
+    outline: 2px solid rgba(65,105,225, .5);
+}
+
+
+
+/* #signupForm input.ng-invalid.ng-touched{
+    border: 1px solid red;
+
+} */
+
+
+/* tablet */
+@media only screen and (min-width: 35em) {
+    
+    
+}
+
+/* PC */
+@media only screen and (min-width: 64rem) {
+
+
+}
+
+
+
+
+
+
+
